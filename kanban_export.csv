@@ -1,0 +1,10 @@
+Title,Description,Labels,Start Date,Due Date,DoD
+mise en place du kanban generator,"Commit: 60e39c60bdf99b693bf533c4e2e8f2333f3ed185
+Conventional: feat(core): mise en place du kanban generator
+Body: (none)
+Files:
+- .githooks/post-commit
+- README.md
+- tools/install_hooks.py
+- tools/kanban.config.json
+- tools/kanban_generate.py",À trier; Feature,2026-01-09,2026-01-09,Code reviewed or review requested; Relevant tests executed; Documentation updated when required; No outstanding TODOs remain

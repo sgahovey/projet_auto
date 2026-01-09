@@ -1,0 +1,18 @@
+[
+  {
+    "title": "mise en place du kanban generator",
+    "description": "Commit: 60e39c60bdf99b693bf533c4e2e8f2333f3ed185\nConventional: feat(core): mise en place du kanban generator\nBody: (none)\nFiles:\n- .githooks/post-commit\n- README.md\n- tools/install_hooks.py\n- tools/kanban.config.json\n- tools/kanban_generate.py",
+    "labels": [
+      "À trier",
+      "Feature"
+    ],
+    "start_date": "2026-01-09",
+    "due_date": "2026-01-09",
+    "dod": [
+      "Code reviewed or review requested",
+      "Relevant tests executed",
+      "Documentation updated when required",
+      "No outstanding TODOs remain"
+    ]
+  }
+]

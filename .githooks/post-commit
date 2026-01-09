@@ -1,0 +1,17 @@
+#!/bin/sh
+
+HOOK_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "${HOOK_DIR}/.." && pwd)"
+PYTHON_EXEC="python3"
+
+if ! command -v "$PYTHON_EXEC" >/dev/null 2>&1; then
+  PYTHON_EXEC="python"
+fi
+
+TARGET="$REPO_ROOT/tools/kanban_generate.py"
+
+if [ -f "$TARGET" ]; then
+  if ! "$PYTHON_EXEC" "$TARGET" >/dev/null 2>&1; then
+    echo "[kanban] post-commit generation failed" >&2
+  fi
+fi

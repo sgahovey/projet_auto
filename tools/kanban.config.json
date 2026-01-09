@@ -1,0 +1,26 @@
+{
+  "labels_map": {
+    "feat": ["Feature"],
+    "fix": ["Bug"],
+    "docs": ["Docs"],
+    "test": ["Test"],
+    "ci": ["CI/CD", "DevOps"],
+    "refactor": ["Refactor"],
+    "chore": ["Maintenance"]
+  },
+  "default_labels": ["À trier"],
+  "dod_templates": {
+    "default": [
+      "Code reviewed or review requested",
+      "Relevant tests executed",
+      "Documentation updated when required",
+      "No outstanding TODOs remain"
+    ],
+    "ci": [
+      "Workflow syntax validated",
+      "Pipelines run successfully in CI",
+      "Secrets and env vars documented",
+      "Rollback plan documented"
+    ]
+  }
+}
