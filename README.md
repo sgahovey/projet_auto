@@ -18,8 +18,9 @@ Le script configure `core.hooksPath` sur `.githooks` et s’assure que le hook p
 ## Utilisation
 
 1. Réalisez vos modifications locales.
-2. Commitez en respectant la convention Conventional Commits (`feat(ui): ajout bouton`, `fix: corrige bug`, `ci: ajuste workflow`, etc.).
-3. Après un commit réussi, le hook `post-commit` exécute silencieusement `tools/kanban_generate.py`.
+2. Indexez les fichiers : `git add .`.
+3. Lancez l’assistant de commit : `python tools/commit.py` (le script pose les questions type/scope/difficulté puis construit le message).
+4. Après un commit réussi, le hook `post-commit` exécute silencieusement `tools/kanban_generate.py`.
 
 Le générateur lit le dernier commit, détermine les labels et éléments de DoD selon le type, puis produit les fichiers `kanban_cards.json` et `kanban_export.csv`. Chaque carte inclut :
 

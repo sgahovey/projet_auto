@@ -4,10 +4,29 @@
     "fix": ["Bug"],
     "docs": ["Docs"],
     "test": ["Test"],
-    "ci": ["CI/CD", "DevOps"],
+    "ci": ["CI/CD"],
     "refactor": ["Refactor"],
+    "deploy": ["Deploy"],
     "chore": ["Maintenance"]
   },
+  "scope_labels_map": {
+    "init": ["Init"],
+    "backend": ["Backend"],
+    "frontend": ["Frontend"],
+    "docker": ["Docker", "DevOps"],
+    "ansible": ["Ansible", "DevOps"],
+    "monitoring": ["Monitoring", "DevOps"],
+    "github-actions": ["CI/CD", "DevOps"],
+    "prod": ["Prod", "DevOps"]
+  },
+  "difficulty_labels_map": {
+    "Diff-1": ["Diff-1"],
+    "Diff-2": ["Diff-2"],
+    "Diff-3": ["Diff-3"],
+    "Diff-4": ["Diff-4"],
+    "Diff-5": ["Diff-5"]
+  },
+  "default_difficulty": "Diff-3",
   "default_labels": ["À trier"],
   "dod_templates": {
     "default": [
